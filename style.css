@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  padding: 1.5rem;
+  min-height: calc(100vh - 0.01rem);
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+}
+
+.card{
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 0.625rem;
+    margin: auto;
+    margin-top: 26rem;
+}
+
+.card .card-body{
+    position: relative;
+}
+
+.card .card-header img{
+    border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.card .card-body .cadrd-img{
+    position: absolute;
+    position: absolute;
+    top: -28%;
+    left: 35%;
+    width: 9rem;
+}
+
+.card .card-body .cadrd-img img{
+    border-radius: 50%;
+    border:6px solid #fff;
+}
+
+.card-body h1{
+    padding-top: 4rem;
+    text-align: center;
+    color: hsl(229, 23%, 23%);
+}
+
+.card-body span{
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+.card-body p {
+    color: hsl(227, 10%, 46%);
+    margin-top: 1rem;
+    padding-bottom: 2rem;  
+    text-align: center;
+}
+
+.card-body ul {
+    border-top: 1px solid hsl(227, 10%, 46%, 0.2);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+.card-body ul li{
+    font-weight: 700;
+  color: hsl(229, 23%, 23%);
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.card-body ul li span {
+    display: block;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: hsl(227, 10%, 46%);
+  letter-spacing: 0.15rem;
+  margin-top: 0.3rem;
+}
+
+.bg-top {
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    z-index: -1;
+  }
+  
+  .bg-bottom {
+    position: absolute;
+    bottom: -50%;
+    right: -20%;
+    z-index: -1;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .card{
+        margin-top: 10rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .card .card-body .cadrd-img{
+        left: 30%;
+    }
+
+    .card-body h1{
+        font-size: 2rem;
+    }
+
+}
+  
